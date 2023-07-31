@@ -1,6 +1,6 @@
 # Position: Data specialist
 
-### Okt 2017 - Okt 2018
+*Date: Okt 2017 - Okt 2018*
 
 ### Company: Bolig portal
 

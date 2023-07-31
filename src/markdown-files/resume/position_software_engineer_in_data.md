@@ -1,6 +1,6 @@
 # Software Engineer in Data - Consultant
 
-### Date: Apr 2023 - Present
+*Date: Apr 2023 - Present*
 
 ### Company: KPMG
 

@@ -1,11 +1,36 @@
 <section class="container">
-  <div class="header-container">
-    <img src="assets/keyboard.png" alt="Left Icon" class="icon"> <!-- Replace with your left icon path -->
+  <div class="header-container centered-content">
+    <img src="assets/keyboard.png" alt="Left Icon" class="icon">
     <h1 class="header-terminal">
       Digital Craftsman - Dennis Jensen
     </h1>
-    <img src="assets/hammer.png" alt="Right Icon" class="icon"> <!-- Replace with your right icon path -->
+    <img src="assets/hammer.png" alt="Right Icon" class="icon">
   </div>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navigation">
+
+    <div class="nav-container">
+      <div class="nav-item">
+        <a href="/resume">Resume</a>
+      </div>
+      <div class="nav-item">
+        <a href="/tech-skills">Technology Skills</a>
+      </div>
+      <div class="nav-item">
+        <a href="/blog">Blog Posts</a>
+      </div>
+    </div>
+  </nav>
+  <div class="header-container">
+    <img src="assets/profile-pic.jpeg" alt="Profile Pic" class="profile-pic">
+    <p>
+      I am a Software Engineer with many skills. I have a passion for developing
+      software which makes an impact and I can see the fruit of my work.
+    </p>
+  </div>
+
   <hr />
+
   <router-outlet></router-outlet>
 </section>

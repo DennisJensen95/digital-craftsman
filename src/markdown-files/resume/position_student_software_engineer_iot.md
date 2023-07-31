@@ -1,6 +1,6 @@
 # Student Software Engineer
 
-### Date: May 2020 - Jan 2022
+*Date: May 2020 - Jan 2022*
 
 ### Company: Silicon Labs
 

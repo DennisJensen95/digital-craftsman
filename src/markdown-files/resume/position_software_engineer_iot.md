@@ -1,10 +1,7 @@
 # Software Engineer in IoT
 
-### Date: May 2020 - Apr 2023
+*Date: May 2020 - Apr 2023*
 
-### Sources to my work
-
-<!-- Include asset icon which can be be clicked on to view source -->
 <a href="https://github.com/SiliconLabs/UnifySDK" target="_blank">
 <img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />
 </a>

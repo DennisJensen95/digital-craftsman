@@ -1,0 +1,14 @@
+<table class="table-container">
+    <ng-container *ngFor="let content of skillsContents; let i = index">
+        <ng-container *ngIf="i % 2 === 0"> <!-- Starts a new row for every even-indexed table -->
+            <tr>
+                <td class="markdown-box">
+                    <markdown [data]="content"></markdown>
+                </td>
+                <td class="markdown-box" *ngIf="skillsContents[i + 1]"> <!-- Add second table if it exists -->
+                    <markdown [data]="skillsContents[i + 1]"></markdown>
+                </td>
+            </tr>
+        </ng-container>
+    </ng-container>
+</table>

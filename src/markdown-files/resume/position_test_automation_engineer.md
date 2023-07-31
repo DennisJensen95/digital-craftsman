@@ -1,6 +1,6 @@
 # Test Automation Engineer
 
-### Date: Okt 2018 - May 2020
+*Date: Okt 2018 - May 2020*
 
 ### Company: Phase One
 

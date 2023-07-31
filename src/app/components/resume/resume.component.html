@@ -1,12 +1,17 @@
-<h2 class="header-terminal">
+<h2 class="header-terminal dropdown" (click)="togglePositions = !togglePositions">
     Positions
 </h2>
-<div *ngFor="let content of positionsContents" class="markdown-box">
-    <markdown [data]="content"></markdown>
+<div *ngIf="togglePositions">
+    <div *ngFor="let content of positionsContents" class="markdown-box">
+        <markdown [data]="content"></markdown>
+    </div>
 </div>
-<h2 class="header-terminal">
+
+<h2 class="header-terminal dropdown" (click)="toggleProjects = !toggleProjects">
     Projects
 </h2>
-<div *ngFor="let content of projectsContents" class="markdown-box">
-    <markdown [data]="content"></markdown>
+<div *ngIf="toggleProjects">
+    <div *ngFor="let content of projectsContents" class="markdown-box">
+        <markdown [data]="content"></markdown>
+    </div>
 </div>

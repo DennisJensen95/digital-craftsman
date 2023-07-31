@@ -1,0 +1,28 @@
+.blog-post {
+    border: 1px solid #0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: #0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog-post:hover {
+    background-color: #0a0a0a;
+}
+
+.post-title a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+.post-content {
+    padding-top: 10px;
+}
+
+.blog-post a i {
+    margin-left: 5px;
+    color: lime;
+}
