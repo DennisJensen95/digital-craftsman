@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MarkdownPreviewComponent } from './components/markdown-preview/markdown-preview.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 const routes: Routes = [
   {
-    path: 'my-markdown',
-    component: MarkdownPreviewComponent
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'resume',
+    component: ResumeComponent
   }
 ];
 

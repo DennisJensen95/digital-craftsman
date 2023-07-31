@@ -1,0 +1,12 @@
+<h2 class="header-terminal">
+    Positions
+</h2>
+<div *ngFor="let content of positionsContents" class="markdown-box">
+    <markdown [data]="content"></markdown>
+</div>
+<h2 class="header-terminal">
+    Projects
+</h2>
+<div *ngFor="let content of projectsContents" class="markdown-box">
+    <markdown [data]="content"></markdown>
+</div>

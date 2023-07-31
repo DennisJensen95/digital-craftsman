@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+// Import Google Fonts for 'Fira Code', a popular monospace font among developers
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+// Apply the theme to the whole page
+body {
+    background-color: #282a36; // a dark gray
+    color: #f8f8f2; // a light gray
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// You could consider adding a style for code blocks
+code {
+    background-color: #44475a; // a slightly lighter dark gray
+    color: #50fa7b; // a bright neon green
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+.header-terminal {
+    background-color: #000000;
+    color: #33FF00;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+
+    // Text
+    text-align: center;
+
+    // Simulate terminal window
+    border-radius: 5px;
+    border: 2px solid #555555;
+
+    // Add a "blinking" cursor
+    &:after {
+        content: '_';
+        animation: blink 1s infinite;
+    }
+
+    // The "blinking" cursor animation
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
-import { MarkdownPreviewComponent } from './components/markdown-preview/markdown-preview.component';
+import { AboutComponent } from './components/about/about.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MarkdownPreviewComponent,
+    AboutComponent,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,

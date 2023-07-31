@@ -3,11 +3,12 @@ import { MarkdownService } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-markdown-preview',
-  templateUrl: './markdown-preview.component.html',
-  styleUrls: ['./markdown-preview.component.scss']
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
-export class MarkdownPreviewComponent {
+
+export class AboutComponent {
   markdown: string;
   constructor(private mdService: MarkdownService, private http: HttpClient) {
     this.markdown = "";
