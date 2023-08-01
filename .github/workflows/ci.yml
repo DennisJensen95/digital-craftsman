@@ -17,9 +17,12 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
+        working-directory: ./apps/frontend
       - name: Build
         run: npm run build -- --base-href "https://digitalcraftsman.dk"
+        working-directory: ./apps/frontend
       - name: Deploy
         run: npx angular-cli-ghpages --dir=dist/digital-craftsman --cname=digitalcraftsman.dk -S --name "Deploy BOT" --email "noemail@mail.com"
+        working-directory: ./apps/frontend
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
