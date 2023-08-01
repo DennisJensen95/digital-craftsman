@@ -14,7 +14,11 @@
       transition: 0.3s;
 
       &:hover {
-        color: #0b4daf;
+        color: #0f0;
+      }
+
+      &.activeTab {
+        color: #0f0;
       }
     }
   }
@@ -30,7 +34,7 @@
 .navigation a {
   text-decoration: none;
   font-size: 1.25rem;
-  border-color: #0b4daf;
+  border-color: #0f0;
 }
 
 .header-container {

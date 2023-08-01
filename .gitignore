@@ -2,6 +2,8 @@
 
 # Compiled output
 /dist
+dist/
+build-app/
 /tmp
 /out-tsc
 /bazel-out
