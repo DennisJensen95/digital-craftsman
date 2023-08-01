@@ -22,6 +22,7 @@ jobs:
         run: npm run build -- --base-href "https://digitalcraftsman.dk"
         working-directory: ./apps/frontend
       - name: Deploy
+        if: github.ref == 'refs/heads/main'
         run: npx angular-cli-ghpages --dir=dist/digital-craftsman --cname=digitalcraftsman.dk -S --name "Deploy BOT" --email "noemail@mail.com"
         working-directory: ./apps/frontend
         env:
