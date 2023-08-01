@@ -5,6 +5,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { TechSkillsComponent } from './components/tech-skills/tech-skills.component';
 import { BlogPostsComponent } from './components/blog-posts/blog-posts.component';
 
+
 const routes: Routes = [
   {
     path: 'about',
@@ -27,7 +28,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { 
 
