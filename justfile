@@ -8,6 +8,8 @@ build-backend:
 package: build-frontend build-backend
     rm -rf build-app
     mkdir build-app
+
+    cp -r apps/frontend/src/markdown-files build-app
     
     # Get backend binary
     cp apps/backend/backend-server/target/release/backend-server build-app

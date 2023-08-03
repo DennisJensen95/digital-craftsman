@@ -1,0 +1,88 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #202020;
+    color: #0f0;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 20px 0;
+    font-family: "Courier New", monospace;
+    overflow: auto;
+    height: 15%;
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.content-container {
+    background-color: #202020;
+    color: #0f0;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+input {
+    background-color: #404040;
+    /* Input background color */
+    color: #0f0;
+    /* Input text color */
+    border: 1px solid #404040;
+    /* Input border color */
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #404040;
+    color: #0f0;
+    border: 1px solid #404040;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #202020;
+    /* Button hover background color */
+}
+
+strong {
+    color: #f00;
+    /* Different color for sender's name */
+}
+
+.loading-dots span {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 2px;
+    background-color: #0f0;
+    border-radius: 20%;
+    animation: loadingDots 1s linear infinite;
+}
+
+@keyframes loadingDots {
+
+    0%,
+    20% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

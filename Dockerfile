@@ -23,7 +23,7 @@ RUN source ~/.bashrc && just package
 FROM debian:buster-slim as RUNTIME
 
 RUN apt-get update && apt-get install -y \
-    libssl-dev
+    libssl-dev ca-certificates
 
 WORKDIR /app/build-app
 

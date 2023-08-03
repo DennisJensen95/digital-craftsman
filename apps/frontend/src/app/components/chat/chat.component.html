@@ -1,0 +1,22 @@
+<p>
+    <strong>Chat with my skills, experience and opinions! Be aware that the assistant might hallucinate as it is build
+        upon an LLM model.</strong>
+</p>
+<div class="chat-container">
+    <div class="content-container">
+        <ng-container *ngFor="let message of messages; let i = index">
+            <div>
+                <strong>{{ message.sender }}:</strong> {{ message.text }}
+            </div>
+        </ng-container>
+        <div *ngIf="loading" class="loading-dots">
+            <span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+    <div class="input-container">
+        <input type="text" [(ngModel)]="inputMessage" placeholder="Type your question..."
+            (keyup.enter)="sendMessage()" />
+        <button (click)="sendMessage()">Send</button>
+        <button (click)="resetChat()">Reset Chat</button>
+    </div>
+</div>
