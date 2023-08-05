@@ -8,7 +8,6 @@
     border: 1px solid #404040;
     border-radius: 5px;
     padding: 10px;
-    max-width: 100%;
     margin: 20px 0;
     font-family: "Courier New", monospace;
     overflow: auto;
@@ -35,13 +34,9 @@
 
 input {
     background-color: #404040;
-    /* Input background color */
     color: #0f0;
-    /* Input text color */
     border: 1px solid #404040;
-    /* Input border color */
     padding: 5px;
-    width: 70%;
     border-radius: 5px;
 }
 
@@ -67,10 +62,10 @@ strong {
 
 .loading-dots span {
     display: inline-block;
+    background-color: #0f0;
     width: 4px;
     height: 4px;
-    margin-right: 2px;
-    background-color: #0f0;
+    margin-right: 1px;
     border-radius: 20%;
     animation: loadingDots 1s linear infinite;
 }
