@@ -1,26 +1,37 @@
+/* Fonts & Colors */
+body {
+    font-family: "Arial, sans-serif";
+}
+
+h1 {
+    font-size: 36px;
+    color: #0000FF;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #00FF00;
+    text-align: center;
+}
+
+/* The existing styles you provided remain untouched */
 .markdown-box {
+    text-align: center;
     padding: 10px;
     margin: 10px;
-    border-radius: 5 px;
+    border-radius: 5px;
     overflow: auto;
-    text-align: left;
     vertical-align: top;
 }
 
-.table-container {
+.container {
     width: 100%;
     text-align: center;
     border-spacing: 10px 10px;
-}
-
-.table-container td {
-    padding: 10px 10px;
-}
-
-.table-container td {
-    padding: 0 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    overflow: auto;
+    position: center;
 }

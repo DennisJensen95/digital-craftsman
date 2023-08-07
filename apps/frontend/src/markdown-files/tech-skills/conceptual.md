@@ -1,12 +1,17 @@
-**Conceptual Skills:**
+# Software Concepts/Methods
 
-| Skill                 | Skill Level |
-|-----------------------|-------------|
-| Software Automation   | 8/10        |
-| Test-Driven Development | 8/10      |
-| Software Architecture | 8/10        |
-| Machine Learning      | 8/10        |
-| Algorithms            | 7/10        |
-| Robotics              | 7/10        |
-| Wireless Technology   | 7/10        |
-| Cyber Security        | 6/10        |
+| Concept                         | Level            | Last Used | Years |
+|---------------------------------|------------------|-----------|-------|
+| Software Release Management     | Very Experienced | 2023     | 3     |
+| Semantic Search                 | Very Experienced | 2023     | 1     |
+| LLM Development                 | Experienced      | 2023     | 1     |
+| Data Pipelines (ETL & ELT)      | Experienced      | 2023     | 1     |
+| Data Validation                 | Experienced      | 2023     | 1     |
+| Test-Driven Development         | Expert           | 2023     | 4     |
+| Software Architecture           | Very Experienced | 2023     | 2     |
+| Wireless Technology             | Very Experienced | 2023     | 3     |
+| Robotics                        | Experienced      | 2022     | 2     |
+| Cyber Security                  | Experienced      | 2023     | 1.5   |
+| Machine Learning                | Very Experienced | 2023     | 3.5   |
+| Event Driven Architecture       | Very Experienced | 2023     | 3     |
+| Software Automation             | Expert           | 2023     | 5     |

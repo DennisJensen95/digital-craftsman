@@ -56,3 +56,38 @@ code {
         }
     }
 }
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    color: #33FF00;
+}
+
+table th,
+table td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #44475a;
+}
+
+/* Fixed column widths for a 3-column table */
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 33.33%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 33.33%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 33.33%;
+}

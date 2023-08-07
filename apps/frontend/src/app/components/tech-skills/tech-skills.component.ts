@@ -10,10 +10,14 @@ import { HttpClient } from '@angular/common/http';
 export class TechSkillsComponent {
   skillsContents: string[] = [];
   skills: string[] = [
-    '/markdown-files/tech-skills/coding.md',
+    '/markdown-files/tech-skills/roles.md',
+    '/markdown-files/tech-skills/industries.md',
+    '/markdown-files/tech-skills/technologies.md',
+    '/markdown-files/tech-skills/frameworks.md',
+    '/markdown-files/tech-skills/infra.md',
+    '/markdown-files/tech-skills/devops.md',
+    '/markdown-files/tech-skills/databases.md',
     '/markdown-files/tech-skills/conceptual.md',
-    '/markdown-files/tech-skills/devops-and-cloud.md',
-    '/markdown-files/tech-skills/build-system.md',
   ];
 
   constructor(private markdownService: MarkdownService, private http: HttpClient) {
