@@ -16,10 +16,10 @@
             <span>.</span><span>.</span><span>.</span>
         </div>
     </div>
-    <div class="input-container">
-        <input type="text" [(ngModel)]="inputMessage" placeholder="Type your question..."
-            (keyup.enter)="sendMessage()" />
-        <button (click)="sendMessage()">Send</button>
-        <button (click)="resetChat()">Reset Chat</button>
-    </div>
+</div>
+<div class="input-container">
+    <input type="text" [(ngModel)]="inputMessage" placeholder="Type your question..." (keyup.enter)="sendMessage()" />
+    <button (click)="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+    <button (click)="resetChat()"><i class="fas fa-redo"></i></button>
+
 </div>
