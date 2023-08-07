@@ -26,7 +26,7 @@ export class ResumeComponent {
     '/markdown-files/resume/project_energinet.md',
     '/markdown-files/resume/project_coverage_scope.md',
     '/markdown-files/resume/project_ler_gml_converter.md',
-    '/markdown-files/resume/project_water_infrastrcuture_service.md',
+    '/markdown-files/resume/project_water_infrastructure_service.md',
     '/markdown-files/resume/project_subplan.md',
     '/markdown-files/resume/project_facebook_scraping_notifier.md',
     '/markdown-files/resume/project_thesis.md',

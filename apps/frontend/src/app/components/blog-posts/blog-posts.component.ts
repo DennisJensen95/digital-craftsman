@@ -28,6 +28,21 @@ export class BlogPostsComponent {
     this.expandedPostIndex = this.expandedPostIndex === index ? null : index;
   }
 
+  handlePostClick(event: Event, post: any, index: number) {
+    // If the clicked element is a link, do nothing (let the browser handle the navigation)
+    if ((event.target as HTMLElement).tagName === 'A') {
+        return;
+    }
+    
+    // If there's a link, navigate to it
+    if (post.link) {
+        window.open(post.link, '_blank');
+    } else {
+        // Otherwise, toggle the content
+        this.toggleContent(index);
+    }
+  }
+
   // Make a dictionary with title, link and markdown content
 
   blogPosts: BlogPost[] = [

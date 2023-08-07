@@ -1,9 +1,10 @@
-<div *ngFor="let post of blogPosts; let i = index" class="blog-post" [ngClass]="{'expanded': expandedPostIndex === i}">
+<div *ngFor="let post of blogPosts; let i = index" class="blog-post" [ngClass]="{'expanded': expandedPostIndex === i}"
+    (click)="handlePostClick($event, post, i)">
     <h2 *ngIf="post.link; else noLinkTemplate" class="post-title">
         <a [href]="post.link" target="_blank">{{ post.title }} <i class="fas fa-external-link-alt"></i></a>
     </h2>
     <ng-template #noLinkTemplate>
-        <h2 (click)="toggleContent(i)" class="post-title">{{ post.title }}</h2>
+        <h2 class="post-title">{{ post.title }}</h2>
     </ng-template>
 
     <div *ngIf="expandedPostIndex === i" class="post-content">
