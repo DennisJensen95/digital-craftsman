@@ -9,8 +9,6 @@ package: build-frontend build-backend
     rm -rf build-app
     mkdir build-app
 
-    cp -r apps/frontend/src/markdown-files build-app
-    
     # Get backend binary
     cp apps/backend/backend-server/target/release/backend-server build-app
 
@@ -19,4 +17,7 @@ package: build-frontend build-backend
 
 run-app: package
     cd build-app && RUST_LOG=debug ./backend-server
+
+deploy: 
+    flyctl deploy --remote-only
 

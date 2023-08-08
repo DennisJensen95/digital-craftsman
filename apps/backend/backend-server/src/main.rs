@@ -6,7 +6,9 @@ use serde::{Deserialize, Serialize};
 
 // Application imports
 mod chat;
+mod search;
 use chat::send_request;
+use search::search;
 
 const MAX_SIZE: usize = 262_144; // max payload size is 256k
 
@@ -66,7 +68,9 @@ async fn chat(mut payload: web::Payload) -> Result<HttpResponse, Error> {
     // body is loaded, now we can deserialize serde-json
     let obj = serde_json::from_slice::<Chat>(&body)?;
 
-    let response = send_request(obj.question).await;
+    let searches = search(&obj.question, "digital-craftsman").await.unwrap();
+
+    let response = send_request(obj.question, searches).await;
 
     match response {
         Ok(v) => Ok(HttpResponse::Ok().json(ChatResponse { response: v })),

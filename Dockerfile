@@ -12,6 +12,11 @@ RUN curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir /usr/lo
 
 WORKDIR /app
 
+RUN wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.0.1%2Bcpu.zip -O libtorch.zip
+RUN unzip -o libtorch.zip
+ENV LIBTORCH /app/libtorch
+ENV LD_LIBRARY_PATH /app/libtorch/lib:$LD_LIBRARY_PATH
+
 COPY . .
 
 # Setup fnm
@@ -20,10 +25,17 @@ RUN fnm install && source ~/.bashrc && fnm use
 RUN source ~/.bashrc && just package
 
 # Runtime image
-FROM debian:buster-slim as RUNTIME
+FROM debian:bullseye-slim as RUNTIME
 
 RUN apt-get update && apt-get install -y \
-    libssl-dev ca-certificates
+    libssl-dev ca-certificates wget unzip libgomp1
+
+WORKDIR /app
+
+RUN wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.0.1%2Bcpu.zip -O libtorch.zip
+RUN unzip -o libtorch.zip
+ENV LIBTORCH /app/libtorch
+ENV LD_LIBRARY_PATH /app/libtorch/lib:$LD_LIBRARY_PATH
 
 WORKDIR /app/build-app
 
@@ -32,5 +44,6 @@ COPY --from=BUILD /app/build-app /app/build-app
 EXPOSE 8080
 
 ENV RUST_LOG=info
+ENV LIBTORCH=/usr/local/lib/python3.7/dist-packages/torch
 
 ENTRYPOINT [ "./backend-server" ]

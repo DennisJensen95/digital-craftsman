@@ -4,25 +4,11 @@ use async_openai::{
     Client,
 };
 
-fn read_files_in_directory(path: &str) -> String {
-    let mut files = Vec::new();
-    for entry in std::fs::read_dir(path).unwrap() {
-        let entry = entry.unwrap();
-        let path = entry.path();
-        let path = path.to_str().unwrap();
-        files.push(path.to_string());
-    }
-
-    // Join all files into a single string
-    files.join("\n")
-}
-
-pub async fn send_request(question: String) -> Result<String, Error> {
+pub async fn send_request(question: String, context: String) -> Result<String, Error> {
     // Create a OpenAI client with api key from env var OPENAI_API_KEY and default base url.
     let client = Client::new();
-
-    let tech_skills = read_files_in_directory("markdown-files/tech-skills");
-    let work_experience = read_files_in_directory("markdown-files/resume");
+    let mut question_content = String::from("### Question");
+    question_content.push_str(question.as_str());
 
     let messages = vec![
         ChatCompletionRequestMessage {
@@ -33,19 +19,13 @@ pub async fn send_request(question: String) -> Result<String, Error> {
         },
         ChatCompletionRequestMessage {
             role: Role::System,
-            content: Some(tech_skills),
-            name: None,
-            function_call: None,
-        },
-        ChatCompletionRequestMessage {
-            role: Role::System,
-            content: Some(work_experience),
+            content: Some(context),
             name: None,
             function_call: None,
         },
         ChatCompletionRequestMessage {
             role: Role::User,
-            content: Some(question),
+            content: Some(question_content),
             name: None,
             function_call: None,
         },
