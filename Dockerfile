@@ -43,7 +43,7 @@ COPY --from=BUILD /app/build-app /app/build-app
 
 EXPOSE 8080
 
+ENV RUSTBERT_CACHE=/data/rustbert_cache
 ENV RUST_LOG=info
-ENV LIBTORCH=/usr/local/lib/python3.7/dist-packages/torch
 
 ENTRYPOINT [ "./backend-server" ]
