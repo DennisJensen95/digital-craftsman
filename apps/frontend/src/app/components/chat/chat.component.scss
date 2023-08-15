@@ -91,3 +91,34 @@ strong {
         opacity: 1;
     }
 }
+
+.example-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 10px;
+    /* Adding margin to space it out a bit */
+}
+
+.example-inputs button {
+    background-color: #404040;
+    color: #0f0;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    /* Using the same font as in the chat-container */
+}
+
+.example-inputs button:last-child {
+    margin-right: 0;
+}
+
+.example-inputs button:hover {
+    background-color: grey;
+    /* Consistent with the other button hover effect */
+}
