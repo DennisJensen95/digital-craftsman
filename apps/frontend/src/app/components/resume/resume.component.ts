@@ -26,6 +26,18 @@ export class ResumeComponent {
         content: ''
       },
       projects: [
+        {
+          url: '/markdown-files/resume/project_software_engineer_iot.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_software_engineer_iot_devops.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_frontend_software_engineer_iot.md',
+          content: ''
+        }
       ]
     },
     {
