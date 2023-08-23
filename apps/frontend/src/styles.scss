@@ -21,6 +21,13 @@ code {
     border-radius: 3px;
 }
 
+.custom-icon {
+    font-size: 42px;
+    width: 42px;
+    height: 42px;
+    color: #50fa7b;
+}
+
 .header-terminal {
     background-color: #000000;
     color: #33FF00;
@@ -90,4 +97,31 @@ table td:nth-child(2) {
 table th:nth-child(3),
 table td:nth-child(3) {
     width: 33.33%;
+}
+
+/* General table styles */
+.table-resume {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    color: #33FF00;
+}
+
+.table-resume th,
+.table-resume td {
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table-resume th {
+    background-color: #44475a;
+}
+
+/* Styles for dynamic-width table */
+.table-resume.dynamic-width th,
+.table-resume.dynamic-width td {
+    width: auto;
+    /* Let the browser decide the width based on content */
 }

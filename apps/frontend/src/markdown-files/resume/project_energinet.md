@@ -5,21 +5,28 @@
 *Date: Aug 2021 - Present*
 
 <a href="https://github.com/DennisJensen95/household-power" target="_blank">
-<img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />
+<i class="fab fa-github custom-icon"></i>
 </a>
 
 ### Description
 
-An application that calculates what one would pay for
-electricity consumption with a fixed price versus a
-variable price. The variable price is calculated with a
-resolution of an hour. This information made me aware
-that I was paying roughly 800kr too much a month on
-fixed pricing.
+The consultant developed an application that estimates electricity costs based
+on the difference between a fixed price and a variable price. This calculation
+was performed on an hourly basis, using data pulled directly from Energinet's
+API. By using this tool, the consultant discovered that by using fixed pricing, he
+paid about 800 kr more per month.
 
-### Some concepts I worked with in this position but not limited to:
+<table>
+<tr>
+<td>
+    Golang
+</td>
+<td>
+    Test Driven Development (TDD) 
+</td>
+<td>
+    API Design
+</td>
+<tr>
+</table>
 
-* Computation algorithms.
-* Test-driven development.
-* REST api usage.
-* API schemas.

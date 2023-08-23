@@ -1,4 +1,4 @@
-# Software Engineer in Data - Consultant
+# Position: Software Engineer in Data - Consultant
 
 *Date: Apr 2023 - Present*
 
@@ -26,17 +26,25 @@ and monitoring. With a good Scrum background, I've
 been a part of fostering a teamwork-centric, agile
 environment, delivering high-value results.
 
-### Some concepts I worked with in this position but not limited to:
-
-* Software solution architecture.
-* Cyber security encryption.
-* Semantic Search and LLM models.
-* Software release management.
-* Test-driven development.
-* Scrum workflow.
-* Developer Operations CI/CD.
-* Data pipelines.
-* Cloud infrastructure.
-* API Design specification.
-* Project time estimation.
-* Software quality processes and gates.
+<table>
+    <tr>
+        <td>Software solution architecture</td>
+        <td>Cyber security encryption</td>
+        <td>Semantic Search and LLM models</td>
+    </tr>
+    <tr>
+        <td>Software release management</td>
+        <td>Test-driven development</td>
+        <td>Scrum workflow</td>
+    </tr>
+    <tr>
+        <td>Developer Operations CI/CD</td>
+        <td>Data pipelines</td>
+        <td>Cloud infrastructure</td>
+    </tr>
+    <tr>
+        <td>API Design specification</td>
+        <td>Project time estimation</td>
+        <td>Software quality processes and gates</td>
+    </tr>
+</table>

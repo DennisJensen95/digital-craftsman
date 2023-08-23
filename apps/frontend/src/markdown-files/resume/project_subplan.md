@@ -6,18 +6,20 @@
 
 ### Description
 
-An application that is able to do geo-visualization of
-underground infrastructure in Geographic Markup
-Language data. This is to help people get easier
-access, on the fly, to underground infrastructure
-placement when working out in the field.
+The consultant has developed an application that allows for geovisualization of
+underground infrastructure based on Geographic Markup Language data. This
+application helps users easily access the location of underground
+infrastructure, which is particularly useful when they are working in the field.
 
-### Some concepts I worked with in this position but not limited to:
-
-* Automatic release pipelines for internal releases and public releases in three formats. Android, iOS, and website.
-* Fastlane deployments.
-* App release managment.
-* Test-driven development.
-* Integration testing.
-* Google Cloud and fly.io for infrastructure setup.
-* API design and schemas.
+<table>
+    <tr>
+        <td>Fastlane iOS / iOS SDK</td>
+        <td>Android development</td>
+        <td>Flutter</td>
+    </tr>
+    <tr>
+        <td>Golang</td>
+        <td>Serverless</td>
+        <td>Firebase</td>
+    </tr>
+</table>

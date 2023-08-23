@@ -1,4 +1,4 @@
-# Student Software Engineer
+# Position: Student Software Engineer
 
 *Date: May 2020 - Jan 2022*
 
@@ -8,18 +8,12 @@
 
 ### Description
 
-Before I transitioned to a full-time employee at Silicon
-Labs I was working there as a student worker. While
-working part-time I had the same areas of
-responsibility as my current full-time position. My
-capabilities as a student worker were regarded at the
-same level as full-time software engineer employees.
-This meant that my responsibilities were in pair with
+Before the consultant entered a full-time position at Silicon Labs, he had already gained valuable
+experience in the company as a student assistant. Even in this part-time role, his responsibilities were the
+same as those in his full-time position. His skills as a student assistant were recognized as being on par
+with the full-time software engineers, meaning his areas of responsibility were in line with the other
+developers. When he transitioned to the full-time position, he simply had more time to invest in the same
+tasks.
 
-the other developers, and when I transitioned into full-
-time I simply had more time to invest.
-
-### Some concepts I worked with in this position but not limited to:
-
-* Same as the above software engineer position in
-Silicon Labs.
+The concepts and projects in the full-time position were the same ones the consultant worked on as a
+student. Therefore, they are not repeated here.

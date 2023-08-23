@@ -5,23 +5,28 @@
 *Date: Aug 2022 - Present*
 
 <a href="https://github.com/DennisJensen95/curly-girl-vinthers-appointment" target="_blank">
-<img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />
+<i class="fab fa-github custom-icon"></i>
 </a>
 
 ### Description 
 
-This service is a very simple web scraping application.
-It scrapes a specific Facebook page to notify my
-girlfriend when there is a cancellation for a hairdresser
-she would like to get an appointment with. It runs on
-infrastructure consisting of AWS EC2 instance as a
-docker container, scraping the Facebook page every
-minute and sending text messages to my girlfriend if
-there is a cancellation.
+The consultant has designed a simple web scraping application. This service
+scrapes data from a specific Facebook page to notify his partner when a
+cancellation occurs at a sought-after hairdresser. It operates on a simple
+infrastructure that uses an AWS EC2 instance running as a Docker container.
+The application goes through the Facebook page every minute and automatically
+sends an SMS message to the consultant's partner upon detecting a
+cancellation.
 
-### Some concepts I worked with in this position but not limited to:
+<table>
+    <tr>
+        <td>AWS Cloud</td>
+        <td>Web Scraping</td>
+        <td>Python</td>
+    </tr>
+    <tr>
+        <td>Cloud Engineering</td>
+        <td>Twillio</td>
+    </tr>
+</table>
 
-* Notification service.
-* AWS Cloud.
-* Web scraping.
-* Twilio text messaging.

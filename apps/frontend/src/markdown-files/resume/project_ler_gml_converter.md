@@ -6,15 +6,30 @@
 
 ### Description
 
-A GML Converter that can convert Geographic Markup
-Language files to DXF files. Specifically designed to
-preserve property data from the GML files into the
-DXF files.
+The consultant has developed a GML converter that is capable of transforming
+Geographic Markup Language (GML) files into DXF files. This tool is specifically
+designed to retain attribute data from the GML files when they are converted to
+the DXF format.
 
-### Some concepts I worked with in this position but not limited to:
+<table>
+    <tr>
+        <td>Continuous Integration</td>
+        <td>Frontend</td>
+        <td>Python</td>
+    </tr>
+    <tr>
+        <td>Serverless</td>
+        <td>Google Cloud</td>
+        <td>Firebase</td>
+    </tr>
+    <tr>
+        <td>AutoCAD</td>
+        <td>Test Driven Development (TDD)</td>
+        <td>Continuous Deployment</td>
+    </tr>
+    <tr>
+        <td>Kubernetes</td>
+    </tr>
+</table>
 
-* Continuous deployment and release pipelines.
-* Software architecture and full stack development.
-* Google cloud infrastructure and firebase.
-* Autocad drawings.
-* Test-driven development.
+

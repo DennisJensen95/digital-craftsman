@@ -1,4 +1,4 @@
-# Test Automation Engineer
+# Position: Test Automation Engineer
 
 *Date: Okt 2018 - May 2020*
 
@@ -8,18 +8,22 @@ Phase One is a Danish company specializing in high-end digital photography equip
 
 ### Description
 
-My position at Phase One encapsulated a role within a
-four man test team where my role entailed the
-development of the test automation framework for
-testing camera products and supporting the team of
-10 software developers. This included designing and
-developing hardware in the loop test framework in
-python.
+The consultant's position at Phase One placed him in a test team consisting of
+four people. Here, he was responsible for developing a test automation framework
+to test camera products, while also supporting a team of 10 software developers.
+The consultant's work also included the design and development of a
+"hardware-in-the-loop" test framework in Python.
 
-### Some concepts I worked with in this position but not limited to:
+<table>
+    <tr>
+        <td>Test automation</td>
+        <td>Integration testing</td>
+        <td>Continuous Integration</td>
+    </tr>
+    <tr>
+        <td>Jenkins</td>
+        <td>Quality Assurance (QA)</td>
+        <td>Image Analysis</td>
+    </tr>
+</table>
 
-* Automated integration tests of hardware and software.
-* Developing automatic quality image analysis software framework.
-* Quality assurance.
-* Debugging and investigation.
-* Communication between teams.

@@ -5,28 +5,36 @@
 *Date: May 2023 - Present*
 
 <a href="https://github.com/DennisJensen95/coverage-scope" target="_blank">
-<img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />
+<i class="fab fa-github custom-icon"></i>
 </a>
 
 <a href="https://www.google.com/url?q=https://medium.com/@darbj95/lightweight-code-coverage-quality-gate-bc595d18bf1&sa=D&source=apps-viewer-frontend&ust=1690889364442314&usg=AOvVaw3g-acSwZMRsJUAncTRancN&hl=da" target="_blank">
-<img src="assets/../../../assets/medium.png" alt="alt text" width="42" height="42" />
+<i class="fab fa-medium custom-icon"></i>
 </a>
 
 ### Description
 
-A lightweight Quality Gate for Code Coverage in GitHub
-actions. This quality gate is meant to make it easier for
-legacy projects to increase code coverage by focusing
-on code coverage on code changes and thresholding
-that code coverage to a specific standard. This also fits
-any other project but was originally thought out due to
-projects having no code coverage and enforcing
-developers to write tests.
+The consultant has developed a lightweight quality gate for code coverage in
+GitHub Actions. This quality gate was designed with the purpose of helping older
+projects improve their code coverage. The quality gate focuses on the code
+coverage of code changes and sets this coverage to a specific standard. This is
+relevant for any project, but the idea originally arose as a tool to encourage
+developers to write tests in projects without code coverage. The consultant uses
+it extensively on all of his own projects.
 
-### Some concepts I worked with in this position but not limited to:
+<table>
+    <tr>
+        <td>Code Coverage</td>
+        <td>Unit testing</td>
+        <td>Rust</td>
+    </tr>
+    <tr>
+        <td>Continuous Integration</td>
+        <td>Quality Assurance (QA)</td>
+        <td>Devops</td>
+    </tr>
+    <tr>
+        <td>Test Driven Development (TDD)</td>
+    </tr>
+</table>
 
-* CI/CD quality gate.
-* Version control management.
-* Code coverage.
-* GitHub actions.
-* Test-driven development.

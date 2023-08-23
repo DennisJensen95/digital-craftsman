@@ -24,7 +24,7 @@ const routes: Routes = [
     path: 'blog',
     component: BlogPostsComponent
   },
-  { path: '', redirectTo: '/resume', pathMatch: 'full' },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -34,7 +34,7 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule { 
+export class AppRoutingModule {
 
 
 }

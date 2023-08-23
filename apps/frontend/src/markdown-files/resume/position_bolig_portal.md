@@ -6,13 +6,17 @@
 
 ### Description
 
-My position at BoligPortal revolved around developing
-web scrapers gathering residential ads from Swedish
-websites. Database management and API
-development for the front end.
+The consultant's position at BoligPortal involved the development of web scrapers that collected housing
+advertisements from Swedish websites. Additionally, he handled tasks related to database management
+and the development of APIs for the frontend.
 
-### Some concepts I worked with in this position but not limited to:
-
-* Scraping framework development.
-* API development.
-* Data storage and database management.
+<table>
+    <tr>
+        <td>MySQL</td>
+        <td>Web Scraping</td>
+        <td>Python</td>
+    </tr>
+    <tr>
+        <td>Data Engineering</td>
+    </tr>
+</table>

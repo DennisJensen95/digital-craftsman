@@ -1,9 +1,9 @@
-# Software Engineer in IoT
+# Position: Software Engineer in IoT
 
 *Date: May 2020 - Apr 2023*
 
 <a href="https://github.com/SiliconLabs/UnifySDK" target="_blank">
-<img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />
+<i class="fab fa-github custom-icon"></i>
 </a>
 
 ### Company: Silicon Labs
@@ -12,29 +12,38 @@
 
 ### Description
 
-My position at Silicon Labs entailed numerous
-concepts within software development. This includes
-embedded Linux software development, edge to cloud
-software, DevOps cloud platform development, and
-secure wireless software technology development. All
-these aspects are a part of the daily work I do at
-Silicon Labs. One of my repsonsibility areas is the
-DevOps platform supporting a team of 20+ developers.
-In addition, I have the responsibility for developing
-bridge software, integrating our Unify SDK IoT
-gateway into multiple other IoT ecosystems, such as
-Matter and Home Assistant.
+The consultant held multiple roles during his tenure at Silicon Labs. These
+roles included embedded Linux software development, edge-to-cloud software,
+DevOps cloud platform development, and the development of secure wireless
+software technology. All of these areas were an integral part of the daily work
+he performed at Silicon Labs.
 
-### Some concepts I worked with in this position but not limited to:
+As a DevOps architect, one of his main responsibilities was to maintain and
+enhance the DevOps platform that supported a team of over 20 developers.
+Additionally, the consultant was responsible for developing bridge software that
+integrated Silicon Labs' Unify SDK IoT gateway with various IoT ecosystems such
+as Matter and Home Assistant.
 
-* Embedded Linux software.
-* Secure wireless technology.
-* Software release management.
-* Test-driven development.
-* Scrum workflow.
-* Developer Operations CI/CD.
-* Cloud infrastructure.
-* Asynchronous microservice architecture.
-* Designing and architecting microservices.
-* Peer review.
-* Software quality processes and gates.
+<table>
+    <tr>
+        <td>Software solution architecture</td>
+        <td>Cyber security encryption</td>
+        <td>Semantic Search and LLM models</td>
+    </tr>
+    <tr>
+        <td>Software release management</td>
+        <td>Test-driven development</td>
+        <td>Scrum workflow</td>
+    </tr>
+    <tr>
+        <td>Developer Operations CI/CD</td>
+        <td>Data pipelines</td>
+        <td>Cloud infrastructure</td>
+    </tr>
+    <tr>
+        <td>API Design specification</td>
+        <td>Project time estimation</td>
+        <td>Software quality processes and gates</td>
+    </tr>
+</table>
+
