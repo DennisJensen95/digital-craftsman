@@ -1,8 +1,8 @@
 # Water Infrastructure Data Service
 
-*Type: Personal project*
-
 *Date: Feb 2021 - Okt 2021*
+
+### Role: Full Stack Software Engineer
 
 <a href="https://github.com/DennisJensen95/digital-ledningsregistrering" target="_blank">
 <img src="assets/../../../assets/github-icon.png" alt="alt text" width="42" height="42" />

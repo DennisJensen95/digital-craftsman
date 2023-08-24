@@ -1,4 +1,4 @@
-# Summary of me
+# Summary
 
 For the past 7 years, Dennis has been a motivated software engineer, eager to apply his skills in the
 development of impactful software products and services. The consultant specializes and has an interest

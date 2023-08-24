@@ -1,8 +1,8 @@
 # LER GML Data visualization
 
-*Type: Personal project*
-
 *Date: Feb 2023 - Present*
+
+### Role: Full Stack Software Engineer
 
 ### Description
 

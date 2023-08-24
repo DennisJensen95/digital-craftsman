@@ -1,8 +1,8 @@
 # LER GML Converter
 
-*Type: Personal project*
-
 *Date: Mar 2023 - Present*
+
+### Role: Full Stack Software Engineer
 
 ### Description
 

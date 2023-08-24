@@ -18,6 +18,22 @@ export class ResumeComponent {
         content: ''
       },
       projects: [
+        {
+          url: '/markdown-files/resume/project_aim.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_qio.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_tprm.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_mlops_platform.md',
+          content: ''
+        }
       ]
     },
     {

@@ -1,7 +1,5 @@
 # Advanced Scheduling System for Autonomous Mobile Robot Fleet
 
-*Type: Master thesis*
-
 *Date: Aug 2021 - Jan 2022*
 
 ### Description

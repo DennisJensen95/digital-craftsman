@@ -1,8 +1,8 @@
 # Facebook scraping notifier
 
-*Type: Personal project*
-
 *Date: Aug 2022 - Present*
+
+### Role: Backend Software Engineer
 
 <a href="https://github.com/DennisJensen95/curly-girl-vinthers-appointment" target="_blank">
 <i class="fab fa-github custom-icon"></i>

@@ -1,8 +1,8 @@
 # Digital Craftsman - personal portfolio website
 
-*Type: Personal project*
-
 *Date: Juli 2023 - Present*
+
+### Role: Full Stack Software Engineer
 
 <a href="https://github.com/DennisJensen95/digital-craftsman" target="_blank">
 <i class="fab fa-github custom-icon"></i>

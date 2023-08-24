@@ -1,8 +1,8 @@
 # Danish household power consumption - Energinet
 
-*Type: Personal project*
-
 *Date: Aug 2021 - Present*
+
+### Role: Backend Software Engineer
 
 <a href="https://github.com/DennisJensen95/household-power" target="_blank">
 <i class="fab fa-github custom-icon"></i>
