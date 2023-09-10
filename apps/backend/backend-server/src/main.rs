@@ -17,11 +17,6 @@ struct Chat {
     question: String,
 }
 
-#[derive(Serialize, Deserialize)]
-struct ChatResponse {
-    response: String,
-}
-
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     env_logger::init();
@@ -70,11 +65,13 @@ async fn chat(mut payload: web::Payload) -> Result<HttpResponse, Error> {
 
     let searches = search(&obj.question, "digital-craftsman").await.unwrap();
 
-    let response = send_request(obj.question, searches).await;
+    let stream = send_request(obj.question, searches).await;
 
-    match response {
-        Ok(v) => Ok(HttpResponse::Ok().json(ChatResponse { response: v })),
-        Err(_) => Err(error::ErrorInternalServerError("Something went wrong")),
+    match stream {
+        Ok(stream) => Ok(HttpResponse::Ok()
+            .append_header(("Content-Type", "text/event-stream"))
+            .streaming(stream)),
+        Err(_) => Ok(HttpResponse::InternalServerError().into()),
     }
 }
 

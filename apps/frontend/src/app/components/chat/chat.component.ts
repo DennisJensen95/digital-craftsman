@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-chat',
@@ -9,29 +8,62 @@ import { HttpClient } from '@angular/common/http';
 export class ChatComponent {
   messages: { sender: string, text: string }[] = [];
   inputMessage: string = '';
-
-  constructor(private http: HttpClient) { }
-
   loading: boolean = false;
 
-  async sendMessage() {
+  constructor() { }
+
+  sendMessage() {
     if (this.inputMessage.trim() === '') return;
 
-    // Add the user's message to the chat
     this.messages.push({ sender: 'You asked', text: this.inputMessage });
-    this.loading = true; // Set loading state for this message
 
-    try {
-      const data = await this.http.post('/chat', { question: this.inputMessage }).toPromise();
-      let parsedData = JSON.parse(JSON.stringify(data));
-      this.messages.push({ sender: 'Digital Craftsman\'s Assistant', text: parsedData.response });
-    } catch (error) {
-      console.error('An error occurred:', error);
-    }
+    this.messages.push({ sender: 'Digital Craftsman\'s Assistant', text: '' });
+    let message_index = this.messages.length - 1;
 
-    this.loading = false; // Unset loading state for this message
-    this.inputMessage = ''; // Clear input for new questions
+    this.loading = true;
+
+    // Capture this context
+    const self = this;
+
+    fetch('/chat', {
+      method: 'POST',
+      body: JSON.stringify({ question: this.inputMessage }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => {
+      if (res.body == null) {
+        return;
+      }
+
+      self.loading = false;
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+
+      return new ReadableStream({
+        start(controller) {
+          const read = (): Promise<void> => {
+            return reader.read().then(({ done, value }) => {
+              if (done) {
+                controller.close();
+                return;
+              }
+
+              const chunk = decoder.decode(value);
+              self.messages[message_index].text += chunk;
+
+              controller.enqueue(value);
+              return read();
+            });
+          };
+
+          return read();
+        }
+      });
+    });
   }
+
 
   resetChat() {
     this.messages = [];
