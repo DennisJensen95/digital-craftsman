@@ -1,0 +1,11 @@
+build: 
+    npm run build
+
+test: 
+    npm run test -- --no-watch --code-coverage --browsers=ChromeHeadless
+
+test-html: test
+    open coverage/ler-gml-converter/index.html
+
+serve:
+    ng serve

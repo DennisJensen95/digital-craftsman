@@ -9,6 +9,10 @@ build-app/
 /bazel-out
 target/
 
+# Rust
+tarpaulin-report.html
+cobertura.xml
+
 # Node
 /node_modules
 node_modules/

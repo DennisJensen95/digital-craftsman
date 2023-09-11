@@ -42,7 +42,7 @@ jobs:
         - name: Calculate test coverage
           working-directory: ./apps/backend/backend-server
           run: |
-            cargo tarpaulin --out Xml
+            just test-coverage
             COVERAGE=$(cat cobertura.xml | xmlstarlet sel -t -v "/coverage/@line-rate" | awk '{printf "%.2f", $1 * 100}')%
             echo "COVERAGE=$COVERAGE" >> $GITHUB_ENV
           env:
@@ -58,6 +58,30 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: ./apps/frontend
+
+    data-pipeline-ci:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Install latest stable
+          uses: actions-rs/toolchain@v1
+          with:
+            toolchain: stable
+            components: rustfmt, clippy
+        - uses: cachix/install-nix-action@v20
+          with:
+            nix_path: nixpkgs=channel:nixos-unstable
+        - name: Install just
+          run: |
+            # Update nix
+            nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+            nix-channel --update
+            nix-env -iA nixpkgs.just
+            nix-env -iA nixpkgs.xmlstarlet
+            nix-env -iA nixpkgs.cargo-tarpaulin
+        - name: Run pipeline
+          run: echo "Runing data pipeline"
+          working-directory: ./ci/data-pipeline
       
     deploy:
       runs-on: ubuntu-latest

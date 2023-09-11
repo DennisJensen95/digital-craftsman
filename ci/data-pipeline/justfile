@@ -5,7 +5,10 @@ test:
     cargo test --all-targets --all-features
 
 test-coverage:
-    cargo tarpaulin --all-features --out html --out xml
+    cargo tarpaulin --all-features --out html
 
 ci: test-coverage lint
     echo "Running CI checks"
+
+upload-data:
+    cargo run
