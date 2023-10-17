@@ -47,7 +47,7 @@ pub async fn search(query: &str, collection_name: &str) -> Result<String> {
         .search_points(&SearchPoints {
             collection_name: collection_name.into(),
             vector: embedding,
-            limit: 5,
+            limit: 10,
             with_payload: Some(true.into()),
             ..Default::default()
         })
