@@ -1,9 +1,10 @@
 use actix_files as fs;
+use actix_governor::{Governor, GovernorConfigBuilder};
 use actix_web::{error, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder, Result};
 use futures::StreamExt;
 use log::info;
 use serde::{Deserialize, Serialize};
-
+use std::time::Duration;
 // Application imports
 mod chat;
 mod search;
@@ -23,10 +24,19 @@ async fn main() -> std::io::Result<()> {
 
     info!("Starting the server...");
 
-    HttpServer::new(|| {
+    let governor_conf = GovernorConfigBuilder::default()
+        .period(Duration::from_secs(3600))
+        .burst_size(20)
+        .finish()
+        .unwrap();
+
+    HttpServer::new(move || {
         App::new()
+            .route(
+                "/chat",
+                web::post().to(chat).wrap(Governor::new(&governor_conf)),
+            )
             .route("/health", web::get().to(health))
-            .route("/chat", web::post().to(chat))
             .service(
                 fs::Files::new("/", "./digital-craftsman")
                     .index_file("index.html")
