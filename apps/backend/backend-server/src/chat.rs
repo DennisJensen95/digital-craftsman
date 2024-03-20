@@ -77,7 +77,7 @@ pub async fn send_request(
                         delta: ChatChunkDelta { content: None },
                     };
 
-                    let c = d.choices.get(0).unwrap_or(default_choice);
+                    let c = d.choices.first().unwrap_or(default_choice);
 
                     if let Some(content) = &c.delta.content {
                         output = Bytes::from(content.to_string());
