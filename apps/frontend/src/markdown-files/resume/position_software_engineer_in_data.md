@@ -1,10 +1,10 @@
 # Position: Software Engineer in Data - Consultant
 
-*Date: Apr 2023 - Present*
+*Date: Apr 2023 - November 2023*
 
 ### Company: KPMG
 
-I work in KPMG Denmark NewTech working with clients implementing cutting edge data-driven solutions.
+I worked in KPMG Denmark NewTech working with clients implementing cutting edge data-driven solutions.
 
 ### Description
 

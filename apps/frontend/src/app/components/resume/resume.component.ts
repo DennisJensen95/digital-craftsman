@@ -14,6 +14,34 @@ export class ResumeComponent {
   positionsAndProjects = [
     {
       position: {
+        url: '/markdown-files/resume/position_freelance.md',
+        content: ''
+      },
+      projects: [
+        {
+          url: '/markdown-files/resume/project_freelance_linklogistics.md',
+          content: ''
+        }
+      ]
+    },
+    {
+      position: {
+        url: '/markdown-files/resume/position_digitalt_haandvaerk.md',
+        content: ''
+      },
+      projects: [
+        {
+          url: '/markdown-files/resume/project_digitalt_haandvaerk_platform.md',
+          content: ''
+        },
+        {
+          url: '/markdown-files/resume/project_digitalt_haandvaerk_ler_gml_converter.md',
+          content: ''
+        },
+      ]
+    },
+    {
+      position: {
         url: '/markdown-files/resume/position_software_engineer_in_data.md',
         content: ''
       },
@@ -92,10 +120,6 @@ export class ResumeComponent {
         },
         {
           url: '/markdown-files/resume/project_coverage_scope.md',
-          content: ''
-        },
-        {
-          url: '/markdown-files/resume/project_ler_gml_converter.md',
           content: ''
         },
         {

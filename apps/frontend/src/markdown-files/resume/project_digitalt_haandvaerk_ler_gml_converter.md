@@ -1,4 +1,4 @@
-# LER GML Converter
+# Digitalt Håndværk - LER GML Converter
 
 *Date: Mar 2023 - Present*
 
