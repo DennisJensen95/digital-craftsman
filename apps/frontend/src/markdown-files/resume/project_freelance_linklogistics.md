@@ -12,7 +12,7 @@ Building a DevOps with GitOps best practice platform with Infrastructure as Code
 * Build best practice reusable CI/CD pipelines around GitOps deployments with ArgoCD and custom deployment engines written in Golang and migrating from Azure DevOps to GitHub Actions.
 * Automated integration tests interfacing with deployments and their infrastructure and including SonarCloud as a static code analyzer.
 * Building everything containerized in Linux containers (Docker) and modularized for easy deployment and consistent environments across development and production.
-* Tech lead for a team of two full-time employees and two part-time employes.
+* Onboarding and training a team of two full-time employees and two part-time employes to the DevSecOps platform.
 
 <table>
     <tr>
