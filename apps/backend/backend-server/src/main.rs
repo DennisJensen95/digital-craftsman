@@ -1,22 +1,7 @@
 use actix_files as fs;
-use actix_governor::{Governor, GovernorConfigBuilder};
-use actix_web::{error, web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder, Result};
-use futures::StreamExt;
+use actix_web::{web, App, HttpRequest, HttpResponse, HttpServer, Responder, Result};
 use log::info;
-use serde::{Deserialize, Serialize};
-use std::time::Duration;
 // Application imports
-mod chat;
-mod search;
-use chat::send_request;
-use search::search;
-
-const MAX_SIZE: usize = 262_144; // max payload size is 256k
-
-#[derive(Serialize, Deserialize)]
-struct Chat {
-    question: String,
-}
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -24,18 +9,8 @@ async fn main() -> std::io::Result<()> {
 
     info!("Starting the server...");
 
-    let governor_conf = GovernorConfigBuilder::default()
-        .period(Duration::from_secs(3600))
-        .burst_size(20)
-        .finish()
-        .unwrap();
-
     HttpServer::new(move || {
         App::new()
-            .route(
-                "/chat",
-                web::post().to(chat).wrap(Governor::new(&governor_conf)),
-            )
             .route("/health", web::get().to(health))
             .service(
                 fs::Files::new("/", "./digital-craftsman")
@@ -57,32 +32,6 @@ async fn p404(_req: HttpRequest) -> Result<fs::NamedFile> {
 
 async fn health() -> impl Responder {
     HttpResponse::Ok().body("OK")
-}
-
-async fn chat(mut payload: web::Payload) -> Result<HttpResponse, Error> {
-    let mut body = web::BytesMut::new();
-    while let Some(chunk) = payload.next().await {
-        let chunk = chunk?;
-        // limit max size of in-memory payload
-        if (body.len() + chunk.len()) > MAX_SIZE {
-            return Err(error::ErrorBadRequest("overflow"));
-        }
-        body.extend_from_slice(&chunk);
-    }
-
-    // body is loaded, now we can deserialize serde-json
-    let obj = serde_json::from_slice::<Chat>(&body)?;
-
-    let searches = search(&obj.question, "digital-craftsman").await.unwrap();
-
-    let stream = send_request(obj.question, searches).await;
-
-    match stream {
-        Ok(stream) => Ok(HttpResponse::Ok()
-            .append_header(("Content-Type", "text/event-stream"))
-            .streaming(stream)),
-        Err(_) => Ok(HttpResponse::InternalServerError().into()),
-    }
 }
 
 #[cfg(test)]

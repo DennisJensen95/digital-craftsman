@@ -15,9 +15,6 @@ bytes = "1.5.0"
 env_logger = "0.10.0"
 futures = "0.3.28"
 log = "0.4.19"
-qdrant-client = "1.4.0"
 reqwest = "0.11.20"
-rust-bert = "0.21.0"
 serde = { version = "1.0.180", features = ["derive"] }
 serde_json = "1.0.104"
-tch = { version = "0.13.0", features = ["download-libtorch"] }

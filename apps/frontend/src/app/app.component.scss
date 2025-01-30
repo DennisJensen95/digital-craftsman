@@ -1,7 +1,8 @@
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
+  max-width: 1200px;
 
   .navigation {
     display: flex;
@@ -36,6 +37,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  max-width: 1200px;
 }
 
 .icon {
@@ -56,8 +58,15 @@
 
 .nav-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
   gap: 10px;
+  grid-template-columns: repeat(4, auto);
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  justify-content: center;
+  padding: 15px 0;
 }
 
 .nav-item {
