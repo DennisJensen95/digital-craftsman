@@ -1,11 +1,10 @@
 # Position: Personal Projects - But not less relevant projects
 
-*Date: Okt 2017 - Present*
+_Date: Okt 2017 - Present_
 
 ### Role: Full Stack Software Engineer
 
-### Company: Self employed
-
+### Company: Digitalt Håndværk
 
 ### Description
 

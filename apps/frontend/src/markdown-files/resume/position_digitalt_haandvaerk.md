@@ -1,6 +1,6 @@
-# Digitalt Håndværk Company
+# Digitalt Håndværk
 
-*Date: 2023 November - Present*
+_Date: 2023 November - Present_
 
 ### Company: Digitalt Håndværk
 

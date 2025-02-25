@@ -1,8 +1,6 @@
 # Freelance consultancy
 
-*Date: 2023 November - Present*
-
-### Company: Self employed
+_Date: 2023 November - Present_
 
 ### Description
 

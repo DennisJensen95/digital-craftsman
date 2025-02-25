@@ -1,6 +1,6 @@
 # Summary
 
-For the past 7 years, Dennis has been a motivated software engineer, eager to apply his skills in the
+For the past 8 years, Dennis has been a motivated software engineer, eager to apply his skills in the
 development of impactful software products and services. The consultant specializes and has an interest
 in general Software Engineering, DevOps, Cloud Engineering, Data Engineering, and Machine Learning.
 
@@ -57,7 +57,7 @@ Business services: Consultancy, Data processing
 
 Construction
 
-Energy: Electricity
+Utility infrastructure: Electricity, Water, Sewage, Heating, Gas, Telecom, Internet
 
 Finance: Bank
 
@@ -77,4 +77,3 @@ I place great emphasis on a software application's impact on Business value. Aft
 </td>
 </tr>
 </table>
-
