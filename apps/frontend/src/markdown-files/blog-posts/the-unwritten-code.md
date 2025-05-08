@@ -1,5 +1,7 @@
 # The Unwritten Rules of Dev/DevOps Team Survival: A Semi-Serious Guide 🤪
 
+> **Disclaimer:** I'm not exactly a social butterfly with wings of charisma - more like a social caterpillar with occasional moments of flight 🦋
+
 Ever wonder what you're actually signing up for when joining a dev team? Let me share what I've learned the hard way...
 
 ## 1. Constructive Communication (AKA "Use Your Words") 🗣️
