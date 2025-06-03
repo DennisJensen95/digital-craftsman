@@ -26,93 +26,6 @@
   }
 }
 
-// CV specific styling when isCV() is true
-.container.cv-mode {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 40px 60px !important; // More generous padding for better readability
-  min-height: 100vh;
-  background: white;
-
-  // Center the content within full width
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  // Make router-outlet content centered but use full available width
-  router-outlet {
-    width: 100% !important;
-    max-width: 1000px; // Limit content width for readability while using full space
-    display: block !important;
-  }
-
-  // Style the visible elements in CV mode
-  .header-container {
-    max-width: 1000px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-
-    .profile-pic {
-      margin-bottom: 15px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin: 0 auto;
-      max-width: 800px;
-      text-align: center;
-    }
-  }
-
-  // GitHub stats container
-  div[style*="justify-content: center"] {
-    max-width: 1000px;
-    width: 100%;
-    margin: 30px 0;
-  }
-
-  .social-links {
-    max-width: 1000px;
-    width: 100%;
-    margin: 20px 0;
-  }
-
-  hr {
-    max-width: 1000px;
-    width: 100%;
-    margin: 30px 0;
-    border: 1px solid #ddd;
-  }
-}
-
-// Print button styling
-.cv-print-button {
-  text-align: center;
-  margin-bottom: 30px;
-
-  .print-btn {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: inherit;
-    box-shadow: 0 2px 8px rgba(0, 122, 204, 0.2);
-
-    &:hover {
-      background-color: #005999;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 122, 204, 0.3);
-    }
-  }
-}
-
 .navigation a {
   text-decoration: none;
   font-size: 1.25rem;
@@ -192,37 +105,29 @@
   }
 }
 
-// Print specific styles
+// Print media query - optimized font sizes for PDF
 @media print {
   .container {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 15mm 20mm !important;
-    box-sizing: border-box;
+    padding: 10px;
   }
 
-  .container.cv-mode {
-    padding: 15mm 20mm !important;
-
-    router-outlet {
-      max-width: none !important;
-    }
+  .navigation a {
+    font-size: 0.9rem;
   }
 
-  // Hide all non-content elements when printing
-  .container .header-container,
-  .container .navigation,
-  .container .social-links,
-  .container hr,
-  .cv-print-button {
-    display: none !important;
+  .header-container p {
+    font-size: 0.85rem;
   }
 
-  // Ensure router-outlet content fills the page
-  .container router-outlet {
-    width: 100% !important;
-    max-width: none !important;
-    display: block !important;
+  .social-links a {
+    font-size: 20px;
+  }
+
+  .nav-container {
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    padding: 8px 12px;
   }
 }

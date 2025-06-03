@@ -1,16 +1,16 @@
-# Digitalt Håndværk - Platform
+# PipePlan
 
-*Date: Jan 2024 - Present*
+_Date: Jan 2024 - Present_
 
 ### Role: Full Stack Software Engineer
 
 ### Description
 
-The consultant is developing a data platform called Digitalt Håndværk,
+The consultant is developing a data and construction industry platform called PipePlan,
 specifically designed for the construction industry, utilizing artificial
 intelligence and other digital tools to optimize work processes. The platform
 builds on top of classical data processing and processes information with AI
-algorithms extracting the useful information for the construction industry.
+algorithms extracting the useful information from CAD files for the construction industry.
 
 <table>
     <tr>
@@ -20,8 +20,8 @@ algorithms extracting the useful information for the construction industry.
     </tr>
     <tr>
         <td>Leptos</td>
-        <td>Fly.io</td>
-        <td>Google Cloud</td>
+        <td>Google Cloud Platform</td>
+        <td>Hetzner Cloud</td>
     </tr>
     <tr>
         <td>AutoCAD</td>
@@ -36,7 +36,10 @@ algorithms extracting the useful information for the construction industry.
     <tr>
         <td>OpenAI</td>
         <td>Terraform</td>
+        <td>Grafana</td>
+    </tr>
+    <tr>
+        <td>Prometheus</td>
+        <td>Opentelemtry</td>
     </tr>
 </table>
-
-

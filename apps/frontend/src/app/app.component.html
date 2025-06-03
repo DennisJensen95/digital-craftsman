@@ -1,5 +1,5 @@
-<section class="container" [class.cv-mode]="isCV()">
-  <div class="header-container centered-content" *ngIf="!isCV()">
+<section class="container">
+  <div class="header-container centered-content">
     <img src="assets/keyboard.png" alt="Left Icon" class="icon" />
     <h1 class="header-terminal">Digital Craftsman - Dennis Jensen</h1>
     <img src="assets/hammer.png" alt="Right Icon" class="icon" />
@@ -53,6 +53,36 @@
   </div>
 
   <div class="social-links">
+    <a
+      href="mailto:dennis.jensen&#64;digitalthaandvaerk.dk"
+      target="_blank"
+      *ngIf="isCV()"
+      style="
+        text-decoration: none;
+        margin-right: 30px;
+        display: inline-flex;
+        align-items: center;
+      "
+    >
+      <i class="fas fa-envelope" style="margin-right: 8px"></i>
+      <span style="font-size: 18px"
+        >dennis.jensen&#64;digitalthaandvaerk.dk</span
+      >
+    </a>
+    <a
+      href="tel:+4526852685"
+      target="_blank"
+      *ngIf="isCV()"
+      style="
+        text-decoration: none;
+        margin-right: 30px;
+        display: inline-flex;
+        align-items: center;
+      "
+    >
+      <i class="fas fa-phone" style="margin-right: 8px"></i>
+      <span style="font-size: 18px">+45 26 85 26 85</span>
+    </a>
     <a href="https://github.com/DennisJensen95" target="_blank">
       <i class="fab fa-github"></i>
     </a>

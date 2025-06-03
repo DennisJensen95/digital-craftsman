@@ -1,11 +1,7 @@
-<h2>
-    Competencies
-</h2>
-<p>
-    Levels: Expert, Very Experienced, Experienced, Good Knowledge, Familiar
-</p>
+<h2 class="header-terminal dropdown">Technology Skills</h2>
+<p>Levels: Expert, Very Experienced, Experienced, Good Knowledge, Familiar</p>
 <div class="container">
-    <ng-container *ngFor="let content of skillsContents; let i = index">
-        <markdown [data]="content"></markdown>
-    </ng-container>
+  <ng-container *ngFor="let content of skillsContents; let i = index">
+    <markdown [data]="content"></markdown>
+  </ng-container>
 </div>

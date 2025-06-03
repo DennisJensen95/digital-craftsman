@@ -1,17 +1,8 @@
-# Summary
+For the past 8 years, I have been a motivated software engineer, eager to apply my skills in developing impactful software products and services. I specialize in Software Engineering, DevOps, Cloud Engineering, Data Engineering, and Machine Learning.
 
-For the past 8 years, Dennis has been a motivated software engineer, eager to apply his skills in the
-development of impactful software products and services. The consultant specializes and has an interest
-in general Software Engineering, DevOps, Cloud Engineering, Data Engineering, and Machine Learning.
+Software Engineering, DevOps, Data and Cloud Engineering are my core competencies, with numerous skills to draw upon for various needs. When developing products and services, I focus on software architecture, reliability, efficiency, and maintenance.
 
-General Software Engineering, DevOps, and Cloud Engineering are areas where Dennis's core
-competencies lie, and there are numerous skills to draw upon for various needs. When developing
-products and services, the consultant focuses on software architecture, reliability, efficiency, and
-maintenance.
-
-To ensure that software products are usable and valuable, it's important for Dennis personally to
-understand the why and what of development, focusing on how the work will influence or assist customers
-in achieving their goals.
+To ensure software products are usable and valuable, it's important for me to understand the why and what of development - focusing on how my work influences and assists customers in achieving their goals.
 
 ### Experience since: 2017
 
