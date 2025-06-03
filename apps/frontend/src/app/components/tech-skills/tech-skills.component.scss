@@ -1,37 +1,38 @@
-/* Fonts & Colors */
 body {
-    font-family: "Arial, sans-serif";
+  font-family: "Fira Code", "Arial", sans-serif;
 }
 
 h1 {
-    font-size: 36px;
-    color: #0000FF;
+  font-size: 36px;
+  color: #007acc;
 }
 
 h2 {
-    font-size: 28px;
-    text-align: center;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
 }
 
 p {
-    font-size: 18px;
-    color: #00FF00;
-    text-align: center;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
 }
 
-/* The existing styles you provided remain untouched */
 .markdown-box {
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    overflow: auto;
-    vertical-align: top;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  overflow: auto;
+  vertical-align: top;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
 }
 
 .container {
-    width: 100%;
-    text-align: center;
-    border-spacing: 10px 10px;
-    position: center;
+  width: 100%;
+  text-align: center;
+  border-spacing: 10px 10px;
+  position: center;
 }

@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "generate-pdf": "node scripts/generate-pdf.js",
+    "install-pdf": "npm install puppeteer --save-dev",
+    "cv-pdf": "npm run generate-pdf"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "puppeteer": "^24.10.0",
     "typescript": "~5.1.3"
   }
 }

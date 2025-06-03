@@ -1,14 +1,12 @@
-<section class="container">
-  <div class="header-container centered-content">
-    <img src="assets/keyboard.png" alt="Left Icon" class="icon">
-    <h1 class="header-terminal">
-      Digital Craftsman - Dennis Jensen
-    </h1>
-    <img src="assets/hammer.png" alt="Right Icon" class="icon">
+<section class="container" [class.cv-mode]="isCV()">
+  <div class="header-container centered-content" *ngIf="!isCV()">
+    <img src="assets/keyboard.png" alt="Left Icon" class="icon" />
+    <h1 class="header-terminal">Digital Craftsman - Dennis Jensen</h1>
+    <img src="assets/hammer.png" alt="Right Icon" class="icon" />
   </div>
 
   <!-- Navigation bar -->
-  <nav class="navigation">
+  <nav class="navigation" *ngIf="!isCV()">
     <div class="nav-container">
       <div class="nav-item">
         <a routerLink="/about" routerLinkActive="activeTab">About</a>
@@ -17,7 +15,9 @@
         <a routerLink="/resume" routerLinkActive="activeTab">Resume</a>
       </div>
       <div class="nav-item">
-        <a routerLink="/tech-skills" routerLinkActive="activeTab">Technology Skills</a>
+        <a routerLink="/tech-skills" routerLinkActive="activeTab"
+          >Technology Skills</a
+        >
       </div>
       <div class="nav-item">
         <a routerLink="/blog" routerLinkActive="activeTab">Blog Posts</a>
@@ -26,25 +26,40 @@
   </nav>
 
   <div class="header-container">
-    <img src="assets/profile-pic.jpeg" alt="Profile Pic" class="profile-pic">
+    <img src="assets/profile-pic.jpeg" alt="Profile Pic" class="profile-pic" />
     <p>
-      I'm a Software Engineer with a wide range of skills. I take great satisfaction in creating software that makes a
-      real difference, and I appreciate being able to see the results of my work.
+      I'm a Software Engineer with a wide range of skills. I take great
+      satisfaction in creating software that makes a real difference, and I
+      appreciate being able to see the results of my work.
     </p>
   </div>
 
   <div
-    style="width: 100%; max-width: 100%; overflow-x: hidden; padding: 16px; box-sizing: border-box; display: flex; justify-content: center;">
+    style="
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+    "
+  >
     <img
-      src="https://github-readme-stats-one-virid-50.vercel.app/api?username=dennisjensen95&show_icons=true&theme=dark"
-      alt="GitHub Stats Card" style="max-width: 100%; height: auto; object-fit: contain;">
+      src="https://github-readme-stats-one-virid-50.vercel.app/api?username=dennisjensen95&show_icons=true&theme=light"
+      alt="GitHub Stats Card"
+      style="max-width: 100%; height: auto; object-fit: contain"
+    />
   </div>
 
   <div class="social-links">
     <a href="https://github.com/DennisJensen95" target="_blank">
       <i class="fab fa-github"></i>
     </a>
-    <a href="https://www.linkedin.com/in/dennis-jensen-159b5012a/" target="_blank">
+    <a
+      href="https://www.linkedin.com/in/dennis-jensen-159b5012a/"
+      target="_blank"
+    >
       <i class="fab fa-linkedin"></i>
     </a>
   </div>

@@ -11,17 +11,104 @@
 
     a {
       text-decoration: none;
-      color: white;
+      color: #333;
       font-size: 1.25rem;
       transition: 0.3s;
 
       &:hover {
-        color: #0f0;
+        color: #007acc;
       }
 
       &.activeTab {
-        color: #0f0;
+        color: #007acc;
       }
+    }
+  }
+}
+
+// CV specific styling when isCV() is true
+.container.cv-mode {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 40px 60px !important; // More generous padding for better readability
+  min-height: 100vh;
+  background: white;
+
+  // Center the content within full width
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Make router-outlet content centered but use full available width
+  router-outlet {
+    width: 100% !important;
+    max-width: 1000px; // Limit content width for readability while using full space
+    display: block !important;
+  }
+
+  // Style the visible elements in CV mode
+  .header-container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+
+    .profile-pic {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 800px;
+      text-align: center;
+    }
+  }
+
+  // GitHub stats container
+  div[style*="justify-content: center"] {
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .social-links {
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  hr {
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+  }
+}
+
+// Print button styling
+.cv-print-button {
+  text-align: center;
+  margin-bottom: 30px;
+
+  .print-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    box-shadow: 0 2px 8px rgba(0, 122, 204, 0.2);
+
+    &:hover {
+      background-color: #005999;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 122, 204, 0.3);
     }
   }
 }
@@ -29,36 +116,41 @@
 .navigation a {
   text-decoration: none;
   font-size: 1.25rem;
-  border-color: #0f0;
+  border-color: #007acc;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   max-width: 1200px;
+  margin: 0 auto;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .icon {
   height: 32px;
-  /* Adjust size as needed */
   width: 32px;
-  /* Adjust size as needed */
 }
 
-// Make a profile pic 
-
 .profile-pic {
-  height: 64px;
-  width: 64px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
-  // Left sided placement
+  object-fit: cover;
+  border: 3px solid #007acc;
 }
 
 .nav-container {
   display: grid;
-  gap: 10px;
+  gap: 15px;
   grid-template-columns: repeat(4, auto);
 
   @media (max-width: 768px) {
@@ -66,20 +158,71 @@
   }
 
   justify-content: center;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 12px 20px;
+
+  a {
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 122, 204, 0.1);
+    }
+  }
 }
 
 .social-links {
-  margin-top: 10px;
+  margin: 20px 0;
   text-align: center;
+
+  a {
+    color: #007acc;
+    margin: 0 15px;
+    font-size: 28px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #005999;
+      transform: translateY(-2px);
+    }
+  }
 }
 
-.social-links a {
-  color: #0f0;
-  margin: 0 10px;
-  font-size: 24px;
+// Print specific styles
+@media print {
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 15mm 20mm !important;
+    box-sizing: border-box;
+  }
+
+  .container.cv-mode {
+    padding: 15mm 20mm !important;
+
+    router-outlet {
+      max-width: none !important;
+    }
+  }
+
+  // Hide all non-content elements when printing
+  .container .header-container,
+  .container .navigation,
+  .container .social-links,
+  .container hr,
+  .cv-print-button {
+    display: none !important;
+  }
+
+  // Ensure router-outlet content fills the page
+  .container router-outlet {
+    width: 100% !important;
+    max-width: none !important;
+    display: block !important;
+  }
 }

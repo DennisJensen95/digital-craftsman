@@ -1,127 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
-// Import Google Fonts for 'Fira Code', a popular monospace font among developers
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap");
 
-// Apply the theme to the whole page
 body {
-    background-color: #282a36; // a dark gray
-    color: #f8f8f2; // a light gray
-    font-family: 'Fira Code', monospace;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Fira Code", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-// You could consider adding a style for code blocks
 code {
-    background-color: #44475a; // a slightly lighter dark gray
-    color: #50fa7b; // a bright neon green
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
+  background-color: #f8f9fa;
+  color: #333333;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
 }
 
 .custom-icon {
-    font-size: 42px;
-    width: 42px;
-    height: 42px;
-    color: #50fa7b;
+  font-size: 42px;
+  width: 42px;
+  height: 42px;
+  color: #007acc;
 }
 
 .header-terminal {
-    background-color: #000000;
-    color: #33FF00;
-    padding: 10px;
-    font-family: 'Courier New', monospace;
-    font-size: 1.5rem;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 15px;
+  font-family: "Fira Code", "Courier New", monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #007acc;
 
-    // Text
-    text-align: center;
+  &:after {
+    content: "_";
+    animation: blink 1s infinite;
+    color: #007acc;
+  }
 
-    // Simulate terminal window
-    border-radius: 5px;
-    border: 2px solid #555555;
-
-    // Add a "blinking" cursor
-    &:after {
-        content: '_';
-        animation: blink 1s infinite;
+  @keyframes blink {
+    0% {
+      opacity: 1;
     }
 
-    // The "blinking" cursor animation
-    @keyframes blink {
-        0% {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
+    50% {
+      opacity: 0;
     }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 table {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-collapse: collapse;
-    color: #33FF00;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  color: #333;
 }
 
 table th,
 table td {
-    padding: 8px 12px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 table th {
-    background-color: #44475a;
+  background-color: #007acc;
+  color: white;
 }
 
-/* Fixed column widths for a 3-column table */
 table th:nth-child(1),
 table td:nth-child(1) {
-    width: 33.33%;
+  width: 33.33%;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
-    width: 33.33%;
+  width: 33.33%;
 }
 
 table th:nth-child(3),
 table td:nth-child(3) {
-    width: 33.33%;
+  width: 33.33%;
 }
 
-/* General table styles */
 .table-resume {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    border-collapse: collapse;
-    color: #33FF00;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  color: #333;
 }
 
 .table-resume th,
 .table-resume td {
-    padding: 8px 12px;
-    text-align: center;
-    border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
 
 .table-resume th {
-    background-color: #44475a;
+  background-color: #007acc;
+  color: white;
 }
 
-/* Styles for dynamic-width table */
 .table-resume.dynamic-width th,
 .table-resume.dynamic-width td {
-    width: auto;
-    /* Let the browser decide the width based on content */
+  width: auto;
 }
