@@ -1,10 +1,10 @@
 # Freelance: DevSecOps engineer consultant at Link Logistics
 
-_Date: November 2023 - Present (Contracted until 2025 March)_
+_Date: November 2023 - Present (Contracted until 2025 June)_
 
 ### Company: Link Logistics
 
-Building a DevOps with GitOps best practice platform with Infrastructure as Code, Continous Integration and Continous Deployment
+Building a DevOps, with GitOps best practice, platform with Infrastructure as Code, Continous Integration and Continous Deployment
 
 ### My responsibilities/actions were
 
